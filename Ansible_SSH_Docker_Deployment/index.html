@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deployment Demo - Student Project</title>
+  <style>
+    /* Basic student-style CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+    }
+    .tech-stack {
+      margin: 20px 0;
+    }
+    .tech-item {
+      display: inline-block;
+      margin: 10px;
+      font-weight: bold;
+    }
+    ul {
+      text-align: left;
+    }
+    .status {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Automated Deployment Demo</h1>
+    <p>This page was deployed using <b>Ansible</b> + <b>Docker</b>.</p>
+
+    <div class="tech-stack">
+      <div class="tech-item">🐳 Docker</div>
+      <div class="tech-item">🤖 Ansible</div>
+      <div class="tech-item">🖥️ Automation</div>
+    </div>
+
+    <h3>How It Works</h3>
+    <ul>
+      <li>Ansible connects to remote host (user: devasc).</li>
+      <li>Playbook writes a Dockerfile in home directory.</li>
+      <li>Dockerfile sets up Apache (httpd) on Alpine Linux.</li>
+      <li>Image built as <b>website</b>.</li>
+      <li>Container <b>web_container</b> runs on port 8080.</li>
+      <li>This HTML page is served from that container.</li>
+    </ul>
+
+    <p class="status">✓ Deployment Successful</p>
+    <p style="font-size:12px;color:#666;">-- Student Project --</p>
+  </div>
+</body>
+</html>
+
